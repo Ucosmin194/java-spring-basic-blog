@@ -10,9 +10,10 @@ import java.util.List;
 
 @Controller
 public class BlogController {
+    private PostRepository postRepository;
     public BlogController(PostRepository postRepository){
-
     }
+
 
     @RequestMapping("/")
     public String listPosts(ModelMap modelMap){
